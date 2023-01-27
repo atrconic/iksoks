@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .container {
+            width: 94px;
+            margin: 30px auto
+        }
+        .igra div span {
+           display: inline-block;
+           width: 30px
+           font-size: 1.5em
+           border: 1px black
+           text-align: center;
+        }
+        .gore-prazno span {
+            border-top: 0!important;
+        }
+        .desno-prazno {
+            border-right: 0!important;
+        }
+        .dolje-prazno span {
+            border-bottom: 0!important;
+        }
+        .lijevo-prazno {
+            border-left: 0!important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="container">
+            <div>
+                <tr class="gore-prazno">
+                    <td class="lijevo-prazno"><button>1</button></td><td><button>2</button></td><td class="desno-prazno"><button>3</button></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td class="lijevo-prazno"><button>4</button></td><td><button>5</button></td><td class="desno-prazno"><button>6</button></td>
+                </tr>
+            </div>
+            <div>
+                <tr class="dolje-prazno ">
+                    <td class="lijevo-prazno"><button>7</button></td><td><button>8</button></td><td class="desno-prazno"><button>9</button></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+</body>
+</html>
