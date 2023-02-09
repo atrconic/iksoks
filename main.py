@@ -24,7 +24,7 @@ def potez():
         else:
             m[data] = "o"
         p += 1
-        if (r := is_game_end()) is not None:
+        if r := is_game_end() is not None:
             return r
     return str(m)
 
