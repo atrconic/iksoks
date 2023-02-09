@@ -35,20 +35,30 @@
         <table class="container">
             <div>
                 <tr class="gore-prazno">
-                    <td class="lijevo-prazno"><button>1</button></td><td><button>2</button></td><td class="desno-prazno"><button>3</button></td>
+                    <td class="lijevo-prazno"><button id="b0" onclick="sayHello(0)">.</button></td>
+                    <td><button id="b1" onclick="sayHello(1)">.</button></td>
+                    <td class="desno-prazno"><button id="b2" onclick="sayHello(2)">.</button></td>
                 </tr>
             </div>
             <div>
                 <tr>
-                    <td class="lijevo-prazno"><button>4</button></td><td><button>5</button></td><td class="desno-prazno"><button>6</button></td>
+                    <td class="lijevo-prazno"><button id="b3" onclick="sayHello(3)">.</button></td>
+                    <td><button id="b4" onclick="sayHello(4)">.</button></td>
+                    <td class="desno-prazno"><button id="b5" onclick="sayHello(5)">.</button></td>
                 </tr>
             </div>
             <div>
                 <tr class="dolje-prazno ">
-                    <td class="lijevo-prazno"><button>7</button></td><td><button>8</button></td><td class="desno-prazno"><button>9</button></td>
+                    <td class="lijevo-prazno"><button id="b6" onclick="sayHello(6)">.</button></td>
+                    <td><button id="b7" onclick="sayHello(7)">.</button></td>
+                    <td class="desno-prazno"><button id="b8" onclick="sayHello(8)">.</button></td>
                 </tr>
             </div>
         </table>
+        <p>result: <span id="resultat">0</span>
+        </p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/app.js"></script>
 </body>
 </html>
