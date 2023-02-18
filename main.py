@@ -3,6 +3,9 @@ app = Flask(__name__)
 
 m = None
 p = None
+xw = 0
+ow = 0
+dr = 0
 
 
 def reset():
@@ -23,7 +26,7 @@ def hello_world():
 
 @app.route("/potez", methods=['GET', 'POST'])
 def potez():
-    global m, p
+    global m, p, xw, ow, dr
     data = int(request.form['button'])
     if m[data] == ".":
         if p % 2 == 0:
@@ -31,9 +34,20 @@ def potez():
         else:
             m[data] = "o"
         p += 1
+    winner = check_winner()
+    if winner == "x":
+        xw += 1
+    elif winner == "o":
+        ow += 1
+    elif winner == "draw":
+        dr += 1
+
     resp = {
         "model": m,
         "winner": check_winner(),
+        "xw": xw,
+        "ow": ow,
+        "dr": dr,
     }
     return jsonify(resp)
 
